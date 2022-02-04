@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-    <title>Wordle - A daily word game</title>
-    <meta name="description" content="Guess the hidden word in 6 tries. A new puzzle is available each day.">
+    <title>ReWordle - Wordle Reimagined</title>
+    <meta name="description" content="Guess the hidden word in 6 tries. Play unlimited puzzles.">
 
     <meta name="theme-color" content="#6aaa64" />
     <link rel="manifest" href="manifest.json" />
@@ -17,6 +17,7 @@
       :root {
         --green: #6aaa64;
         --darkendGreen: #538d4e;
+        --strongpink: #d31966; 
         --yellow: #c9b458;
         --darkendYellow: #b59f3b;
         --lightGray: #d8d8d8;
@@ -62,7 +63,7 @@
       }
       :root {
         --color-present: var(--yellow);
-        --color-correct: var(--green);
+        --color-correct: var(--strongpink);
         --color-absent: var(--color-tone-2);
         --tile-text-color: var(--color-tone-7);
         --key-text-color: var(--color-tone-1);
@@ -75,7 +76,7 @@
       }
       .nightmode {
         --color-present: var(--darkendYellow);
-        --color-correct: var(--darkendGreen);
+        --color-correct: var(--strongpink);
         --color-absent: var(--color-tone-4);
         --tile-text-color: var(--color-tone-1);
         --key-text-color: var(--color-tone-1);
@@ -105,6 +106,22 @@
         /* Prevent scrollbar appearing on page transition */
         overflow-y: hidden;
       }
+      .share {
+        background-color: var(--key-bg-correct);
+        color: var(--key-evaluated-text-color);
+        font-family: inherit;
+        font-weight: bold;
+        margin-left: 6px;
+        margin-right: 6px;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        user-select: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+      }
     </style>
   </head>
   <body>
@@ -116,6 +133,8 @@
       })();
     </script>
     <script src="main.js"></script>
+    <button class="share" onclick="TelegramGameProxy.shareScore()" >Share  <img src="https://core.telegram.org/favicon.ico?4"style="width:16px;height:16px;" ></img></button>
     <game-app></game-app>
+    <script src="https://telegram.org/js/games.js"></script>
   </body>
 </html>
