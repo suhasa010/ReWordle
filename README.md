@@ -1,7 +1,8 @@
 # Wordle
 A simple [Wordle](https://www.powerlanguage.co.uk/wordle/) clone that removes the limit of one puzzle per day. The original uses the current date to determine which puzzle to show, whereas this one uses arbitrary dates.
 
-### [Play the game here!](https://cesarnogueira.com/wordle/)
+### [Play the game here!](https://rewordlebot.netlify.app/)
+
 
 ## Possible future improvements
  - Allow choosing which puzzle to play by number
@@ -9,4 +10,6 @@ A simple [Wordle](https://www.powerlanguage.co.uk/wordle/) clone that removes th
  - Unminify code
  - Add other languages
 
-Credit: [@powerlanguage](https://github.com/powerlanguage)
+Credits: 
+- (Based on [César Nogueira's wordle](http://cesarnogueira.com/wordle))
+- [@powerlanguage](https://github.com/powerlanguage)
