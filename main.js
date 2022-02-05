@@ -1723,7 +1723,8 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                               window.open(`https://t.me/share/url?text=%0A${stats}&url=https://telegram.me/rewordlebot`)
                             //   e.gameApp.addToast("Copied results to clipboard", 2e3, !0)
                           }), (function() {
-                              e.gameApp.addToast("Share failed", 2e3, !0)
+                            window.open(`https://t.me/share/url?text=%0A${stats}&url=https://telegram.me/rewordlebot`)
+                            //   e.gameApp.addToast("Share failed", 2e3, !0)
                           }))
                       }))
                   }
