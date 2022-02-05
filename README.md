@@ -11,5 +11,5 @@ A simple [Wordle](https://www.powerlanguage.co.uk/wordle/) clone that removes th
  - Add other languages
 
 Credits: 
-- (Based on [César Nogueira's wordle](http://cesarnogueira.com/wordle))
+- Based on [César Nogueira's wordle](http://cesarnogueira.com/wordle)
 - [@powerlanguage](https://github.com/powerlanguage)
