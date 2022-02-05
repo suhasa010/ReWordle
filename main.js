@@ -1720,10 +1720,10 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                               isHardMode: e.gameApp.hardMode,
                               isWin: e.gameApp.gameStatus === es
                           }), (function() {
-                              window.open(`tg://msg_url?url=https://telegram.me/rewordlebot&text=%0A${stats}`)
+                              window.open(`tg://msg_url?text=%0A${stats}&url=https://google.com`)
                             //   e.gameApp.addToast("Copied results to clipboard", 2e3, !0)
                           }), (function() {
-                            window.open(`tg://msg_url?url=https://telegram.me/rewordlebot&text=%0A${stats}`)
+                            window.open(`tg://msg_url?text=%0A${stats}&url=https://google.com`)
                             //   e.gameApp.addToast("Share failed", 2e3, !0)
                           }))
                       }))
